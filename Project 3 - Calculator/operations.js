@@ -1,7 +1,7 @@
 var buttons = document.getElementsByTagName("button");
 var calculate = document.getElementById("calculate");
 
-/* Enter key future plans*/ 
+/* Enter key future plans*/
 
 for (var thisBtn of buttons) {
   thisBtn.addEventListener('click', function() {
