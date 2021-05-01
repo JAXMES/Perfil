@@ -1,13 +1,15 @@
 var buttons = document.getElementsByTagName("button");
-            var calc = document.getElementById("calc");
+var calculate = document.getElementById("calculate");
 
-            for (var thisBtn of buttons) {
-                thisBtn.addEventListener('click', function() {
-                    if (this.innerHTML == "=")
-                        calc.value = eval(calc.value);
-                    else if (this.innerHTML == "C")
-                        calc.value = "";
-                    else
-                        calc.value += this.innerHTML;
-                })
-            }
+/* Enter key future plans*/ 
+
+for (var thisBtn of buttons) {
+  thisBtn.addEventListener('click', function() {
+    if (this.innerHTML == "=")
+      calculate.value = eval(calculate.value);
+    else if (this.innerHTML == "C")
+      calculate.value = "";
+    else
+      calculate.value += this.innerHTML;
+  })
+}

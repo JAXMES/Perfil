@@ -1,31 +1,42 @@
+body {
+  position: relative;
+}
+
 input {
   border-radius: 20px;
   text-align: center;
   border: none;
-  font-size: 20px;
-  font-family: Montserrat, sans-serif;
-}
-
-input{
   font-size: 30px;
   border-style: ridge;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 2%;
 }
 
 .main {
   text-align: center;
-  margin-top: 15%;
-
+  margin-top: 7%;
+  position: relative;
 }
 
 .btn-lg {
   padding: 20px 30px;
   font-size: 30px;
   border-radius: 20px;
+  width: 80px;
+  margin: 0.2%;
 }
-
-.operators {}
 
 .numbers {
-  left: 0px;
+  margin-right: 90px;
 }
+
+/* figure out a way to add this without pushing other buttons */
+/* .equal {
+  position: relative;
+  display: inline;
+  height: 200px;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+} */
