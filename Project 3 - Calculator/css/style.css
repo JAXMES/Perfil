@@ -1,0 +1,31 @@
+input {
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+input{
+  font-size: 30px;
+  border-style: ridge;
+  margin-bottom: 2%;
+}
+
+.main {
+  text-align: center;
+  margin-top: 15%;
+
+}
+
+.btn-lg {
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.operators {}
+
+.numbers {
+  left: 0px;
+}
