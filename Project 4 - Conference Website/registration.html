@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/470b011131.js" crossorigin="anonymous"></script>
+  <title>Lehman Conference - Registration</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
+    <img class="lehman-logo" src="img/logo.png" alt="Lehman logo">
+    <ul class="main-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+
+  <!-- Registration Form -->
+
+  <h1>Registration Form</h1>
+
+  <form>
+
+    <div class="contentform">
+      <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+      <div class="form-group">
+        <p>Full Name<span>*</span></p>
+        <span class="icon-case"><i class="fa fa-user"></i></span>
+        <input type="text" name="fullname" id="fullName" data-rule="required" data-msg="Check your input on the fields: The 'Full name' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>E-mail <span>*</span></p>
+        <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+        <input type="email" name="email" id="email" data-rule="email" data-msg="Check your input on the fields: The 'E-mail' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Password <span>*</span></p>
+        <span class="icon-case"><i class="fas fa-lock-open"></i></span>
+        <input type="text" name="password" id="password" data-rule="required" data-msg="Check your input on the fields: The 'Password' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Confirm Password <span>*</span></p>
+        <span class="icon-case"><i class="fas fa-lock"></i></span>
+        <input type="text" name="confirm-password" id="passwordConfirm" data-rule="required" data-msg="Check your input on the fields: The 'Confirm Password' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Phone Number <span>*</span></p>
+        <span class="icon-case"><i class="fa fa-phone"></i></span>
+        <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Check your input on the fields: The 'Phone Number' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Organization <span>*</span></p>
+        <span class="icon-case"><i class="fas fa-university"></i></span>
+        <input type="text" name="organization" id="organization" data-rule="required" data-msg="Check your input on the fields: The 'Organization' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Country <span>*</span></p>
+        <span class="icon-case"><i class="fas fa-university"></i></span>
+        <input type="text" name="country" id="country" data-rule="required" data-msg="Check your input on the fields: The 'Organization' field must be completed." />
+        <div class="validation"></div>
+      </div>
+
+
+      <div id="radio group" class="form-field">
+        <label>Registration Type: (Select type)</label> <br>
+        <input type="radio" name="registration-type" value="Author" onclick="handleRadio(this);">
+        <label>Author ($400)</label> <br>
+        <input type="radio" name="registration-type" value="Participant" onclick="handleRadio(this);">
+        <label>Participant ($300)</label> <br>
+        <input type="radio" name="registration-type" value="Student" onclick="handleRadio(this);">
+        <label>Student ($100)</label> <br>
+      </div>
+
+      <div id="discount-field" class="form-field">
+        <label>Discount code:</label> <br>
+        <input type="text" name="discountCode" id="discountCode" placeholder="Enter Discount Code.  50% discount applied after registration"> <br>
+      </div>
+
+      <div id="totalPrice">
+        
+        <p id="price"></p>
+      </div>
+
+
+
+
+      <div id="formErrors"></div>
+
+
+    </div>
+
+
+    <input type="submit" id="submit" value="Register">
+
+  </form> -->
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+</body>
+
+<footer id="footer">
+
+  <a href="https://www.facebook.com/LehmanCUNY"><i class="footer-icons fab fa-facebook"></i></a>
+  <a href="https://twitter.com/LehmanCollege"><i class="footer-icons fab fa-twitter"></i>
+  <p>Lehman College 1St International Conference in Cloud Computing</p>
+  <p>15-16 July 2021</p>
+  <p>Bronx, NY</p>
+
+</footer>
+
+</html>
